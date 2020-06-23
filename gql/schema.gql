@@ -1,0 +1,13 @@
+type Query {
+    hello: String
+}
+
+type Mutation {
+    parallel: Waiter
+    serial: Waiter
+    serial2: Waiter
+}
+
+type Waiter {
+    wait(time: Int!): Int
+}
